@@ -10,8 +10,7 @@ Welcome to my GitHub repository! This repository contains a collection of web-ba
      - User-friendly form layout
      - Client-side form validation
      - Dynamic field updates using JavaScript
-   - **How to Run:**
-     - Open `zoho-form.html` in your browser.
+ 
 
 ### 2. **Timer and Clock**
    - This project consists of a functional timer and a real-time clock, built using JavaScript and styled with CSS.
@@ -30,8 +29,7 @@ Welcome to my GitHub repository! This repository contains a collection of web-ba
      - Responsive layout for mobile and desktop
      - CSS animations and transitions
      - Navigation bar, banners, and product listings
-   - **How to Run:**
-     - Open `thangamayil.html` in your browser.
+
 
 ### 4. **Pair Matching Game**
    - A classic pair matching game where users flip cards to find matching pairs, created using JavaScript.
@@ -48,16 +46,14 @@ Welcome to my GitHub repository! This repository contains a collection of web-ba
      - Timed questions
      - Score calculation
      - Question randomization
-   - **How to Run:**
-     - Open `quiz-game.html` in your browser.
+
 
 ### 6. **Ramco Cement Website Replication**
    - A design and functionality recreation of the Ramco Cement website using HTML and CSS.
    - **Features:**
      - Structured layout with product information
      - CSS-based styling for product displays and navigation
-   - **How to Run:**
-     - Open `ramco-cement.html` in your browser.
+ 
 
 ### 7. **Jersey Milk Advertisement**
    - A simple yet elegant advertisement page designed for Jersey Milk, focusing on visual appeal and clear messaging using HTML and CSS.
@@ -65,8 +61,7 @@ Welcome to my GitHub repository! This repository contains a collection of web-ba
      - Visual banner and product advertisement
      - Call-to-action sections
      - CSS animations
-   - **How to Run:**
-     - Open `jersey-milk-ad.html` in your browser.
+
 
 
 ## Technologies Used
