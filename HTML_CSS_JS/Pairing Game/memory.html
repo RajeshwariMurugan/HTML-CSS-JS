@@ -1,0 +1,116 @@
+<<html>
+<head>
+	<title>PAIRS GAME</title>
+	<style>
+	.container{
+		display: grid;
+		place-items: center;
+	    background-color: red;
+	}
+	.cards
+	{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+     grid-gap: 40px;
+	}
+	.card{
+		height: 250px;
+		width: 250px;
+		background-color: yellow;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	.card img
+	{
+		width: 190px;
+		height: 190px;
+		padding: 30px;
+		opacity: 0;
+	}
+	.card.clicked
+	{
+		background-color: orange;
+	}
+	.card.checked
+	{
+		background-color: lightgreen;
+
+	}
+	.card.clicked img,
+	.card.checked img{
+		 	opacity: 1;
+	}
+	.card.shaked
+	{
+		background-color: black;
+	    opacity: 0;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1><center> PAIR GAME</center></h1>
+		<div class="cards">
+			<div class="card" animal="watch"><img src="watch1.jpg"></div>
+			<div class="card"animal="bag"><img src="bag1.jpg"></div>
+			<div class="card"animal="earing"><img src="ear21.jpg"></div>
+			<div class="card"animal="flower"><img src="hi.jpg"></div>
+		<div class="card"animal="watch"><img src="watch1.jpg"></div>
+		<div class="card"animal="bag"><img src="bag1.jpg"></div>
+		<div class="card"animal="earing"><img src="ear21.jpg"></div>
+		<div class="card"animal="flower"><img src="hi.jpg"></div>
+		</div>
+</div>
+		<script>
+	
+
+
+			let counter=0;
+			let card1="";
+			let card2="";
+			const cards=document.querySelectorAll(".cards .card");
+			cards.forEach((card)=>
+			{
+				card.addEventListener('click',()=>
+				{
+               card.classList.add("clicked");
+               if(counter===0)
+               {
+               		card1=card.getAttribute("animal");
+               		counter++;
+               }
+               else
+               {
+               	card2=card.getAttribute("animal");
+               		counter=0;
+               		if(card1===card2)
+               		{
+               			const crct=document.querySelectorAll(".card[animal='"+card1+"']");
+               			crct[0].classList.add("checked");
+               			crct[0].classList.remove("clicked");
+               			crct[1].classList.add("checked");
+               			crct[1].classList.remove("clicked");
+               		}
+               		else
+               		{
+               			const incrct=document.querySelectorAll(".card.clicked");
+               			incrct[0].classList.add("shaked");
+               			incrct[1].classList.add("shaked");
+               			setTimeout(()=>
+               			{
+               				incrct[0].classList.remove("shaked");
+               				incrct[0].classList.remove("clicked");
+               				incrct[1].classList.remove("shaked");
+               				incrct[1].classList.remove("clicked");
+               			},400);
+
+               		}
+              
+              
+               }
+               });
+			});
+		</script>
+	
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>PAIR GAME</title>
+		<style>
+	body
+	{
+		background-color: hotpink;
+	}
+	#ones,#twos
+	{
+		display: flex;
+		flex-wrap: flex;
+		justify-content: justify;
+			}
+	.value
+    {
+    height: 200px;	
+    width: 200px;
+   margin-left:100px;
+   margin-top: 40px;
+    border: 2px dotted black;
+    background-color: black;
+    flex-wrap: wrap;
+	}
+    
+    #Child1,#Child2,#Child3,#Child4,#Child5,#Child6,#Child7,#Child8
+    {
+		height: 150px;
+		width: 150px;
+		padding: 30px;
+		display:none;
+	}
+    
+	
+</style>
+
+</head>
+<body>
+	<h1><center> PAIR GAME</center></h1>
+<div id="game">
+	<div id="ones">
+		<div id="Parent1" class="value"onclick="game(1)"><div id="Child1" class="table"></div></div>
+		<div id="Parent2"class="value"onclick="game(2)"><div  id="Child2"class="table"></div></div>
+		<div id="Parent3"class="value"onclick="game(3)"><div  id="Child3"class="table"></div></div>
+		<div id="Parent4"class="value"onclick="game(4)"><div id="Child4"class="table"></div></div>
+</div>
+<div id="twos">
+		<div id="Parent5"class="value"onclick="game(5)"><div id="Child5"class="table"></div></div>
+		<div id="Parent6"class="value"onclick="game(6)"><div id="Child6"class="table"></div></div>
+		<div id="Parent7"class="value"onclick="game(7)"><div id="Child7"class="table"></div></div>
+		<div id="Parent8"class="value"onclick="game(8)"><div id="Child8"class="table"></div></div>
+	</div>
+</div>
+<script src="pair.js"></script>
+		
+	</body>
+	</html>
+
+
+<

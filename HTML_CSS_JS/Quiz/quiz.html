@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>QUIZ GAME</title>
+	<style>
+	body
+	{
+		background-color: hotpink;
+	}
+	.static
+	{
+		background-color: orange;
+		width: 90%;
+		margin: 5px auto 0;
+		border-radius: 10px;
+		height: 700px;
+    }
+	h1
+	{
+		text-align: center;
+		font-size: 40px;
+	}
+	h4
+	{
+		text-align: center;
+		font-size: 40px;
+		margin-top: 10px;
+	}
+	.quiz
+	{
+		padding: 20px 0;
+	}
+	.ans
+	{
+		height: 40px;
+		width: 600px;
+		display:flex;
+		background-color: white;
+		margin-top: 50px;
+		margin-left: 370px;
+		border-radius: 10px;
+		cursor: pointer;
+
+	}
+	.ans:hover([disabled])
+	{
+		cursor: no-drop;
+
+	}
+	.ans:hover:not([disabled])
+	{
+	background:lightblue;
+	}
+	#next
+	{
+		height: 30px;
+		width: 90px;
+		background-color: yellow;
+		margin-left: 570px;
+		cursor: pointer;
+		display: block;
+		margin-top: 40px;
+
+	}
+	.correct
+{
+	background-color: green;
+}
+.incorrect
+{
+	background-color: red;
+}
+
+
+
+	</style>
+	</head>
+	<body>
+			
+	<div class="static"><h1>Awesome Quiz</h1>
+		<div class="quiz">
+		<h4 id="que">QUESTIONS:<br></h4>
+	
+		<div id="keys">
+			<button class="ans" value="ans1">SELECT ANSWER</button>
+			<button class="ans" value="ans2">SELECT ANSWER</button>
+			<button class="ans"value="ans3">SELECT ANSWER</button>
+			<button class="ans"value="ans4">SELECT ANSWER</button>
+		</div>
+			<button id="next">Next</button>
+		</div>
+		</div>
+
+</div>
+<script src="quiz.js">
+	
+</script>
+	</body>
+</html>
