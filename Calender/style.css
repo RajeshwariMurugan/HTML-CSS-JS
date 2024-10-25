@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calendar-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.calendar {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.day-names, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day-names div {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.days div {
+    padding: 15px 0;
+    background-color: #e3e3e3;
+    color: #333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days div:hover {
+    background-color: #d1d1d1;
+    cursor: pointer;
+}
+
+.days .empty {
+    background-color: transparent;
+}
